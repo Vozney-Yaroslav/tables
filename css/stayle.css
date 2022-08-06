@@ -1,0 +1,122 @@
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 960px;
+    
+}
+
+p {
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #bfbfbf;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-table {
+  
+  
+  
+  
+}
+.stick::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 1px;
+  height: 45px;
+  background-color: red;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #666;
+  border-radius: 3px;
+  background: #2a3644;
+  
+
+}
+
+.menu > li {
+  display: inline-block;
+  position: relative;
+}
+
+.menu a {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  color: #fff  ;
+  padding: 14px 20px;
+  display: block;
+}
+
+.menu a:hover  {
+  
+  color: #fd8612;
+  background-color: #3f4852;
+}
+
+
+
+.sub-menu {
+  position: absolute;
+  width: 211px;
+  top: 110%;
+  display: none;
+  border-radius: 3px;
+  background-color: #d2d4d5;
+  transition: all .5s ease;
+}
+
+.sub-menu a {
+  border-top: 1px solid #b9bdc1;
+  font-size: 15px;
+  color: #2a3644;
+  font-weight: bold;
+  
+}
+
+.menu li .sub-menu li:first-child a {
+  border-top: none;
+  
+}
+
+.menu li .sub-menu li:hover:first-child a {
+  border-radius: 3px 3px 0 0;
+  
+}
+
+.menu li .sub-menu li:hover:last-child a {
+  border-radius: 0 0 3px 3px;
+  
+}
+
+.menu li:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu a:hover  {
+  
+  
+  
+  background-color: #2a3644;
+  
+  font-size: 15px;
+  color: #ff8505;
+  
+}
