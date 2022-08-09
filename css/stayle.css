@@ -27,23 +27,43 @@ ul {
 
 
 
-.food {
+.menu {
+  border-radius: 3px;
   display: flex;
   justify-content: space-between;
-  border: 1px solid #666;
-  border-radius: 3px;
   background: #2a3644;
   
-
+  
 }
 
-.food > li {
+.menu > li {
   display: inline-block;
   position: relative;
-  border: 1px solid #3f4852;
+  
 }
 
-.food a {
+.menu > li > a {
+  border-left: 1px solid #3f4852;
+  border-right: 1px solid #3f4852;
+  
+}
+
+.menu > li:first-child > a {
+  border-radius: 3px 0 0 3px;
+  border-left: none;
+}
+
+
+
+.menu > li:last-child > a{
+  border-radius: 0 3px 3px 0;
+  border-right: none;
+}
+
+
+
+
+.menu a {
   font-size: 16px;
   font-weight: bold;
   color: #fff  ;
@@ -51,7 +71,7 @@ ul {
   display: block;
 }
 
-.food a:hover  {
+.menu a:hover  {
   
   color: #fd8612;
   background-color: #3f4852;
@@ -62,7 +82,7 @@ ul {
 .sub-menu {
   position: absolute;
   width: 211px;
-  top: 115%;
+  top: 110%;
   display: none;
   transition: all .5s ease;
   border-radius: 3px;
@@ -72,7 +92,7 @@ ul {
 
 
 
-.food .sub-menu::before {
+.menu .sub-menu::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -92,17 +112,17 @@ ul {
 }
 
 
-.food li .sub-menu li:first-child a {
+.menu li .sub-menu li:first-child a {
   border-top: none;
   
 }
 
-.food li .sub-menu li:hover:first-child a {
+.menu li .sub-menu li:hover:first-child a {
   border-radius: 3px 3px 0 0;
   
 }
 
-.food li .sub-menu li:hover:last-child a {
+.menu li .sub-menu li:hover:last-child a {
   border-radius: 0 0 3px 3px;
   
 }
@@ -112,7 +132,7 @@ ul {
 }
 
 
-.food li:hover .sub-menu {
+.menu li:hover .sub-menu {
   display: block;
 }
 
@@ -126,3 +146,4 @@ ul {
   color: #ff8505;
   
 }
+ 
