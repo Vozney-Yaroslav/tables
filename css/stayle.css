@@ -25,23 +25,9 @@ ul {
   list-style: none;
 }
 
-.menu-table {
-  
-  
-  
-  
-}
-.stick::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  width: 1px;
-  height: 45px;
-  background-color: red;
-}
 
-.menu {
+
+.food {
   display: flex;
   justify-content: space-between;
   border: 1px solid #666;
@@ -51,21 +37,21 @@ ul {
 
 }
 
-.menu > li {
+.food > li {
   display: inline-block;
   position: relative;
+  border: 1px solid #3f4852;
 }
 
-.menu a {
+.food a {
   font-size: 16px;
-  color: #ffffff;
   font-weight: bold;
   color: #fff  ;
-  padding: 14px 20px;
+  padding: 14px 30px;
   display: block;
 }
 
-.menu a:hover  {
+.food a:hover  {
   
   color: #fd8612;
   background-color: #3f4852;
@@ -76,14 +62,28 @@ ul {
 .sub-menu {
   position: absolute;
   width: 211px;
-  top: 110%;
+  top: 115%;
   display: none;
+  transition: all .5s ease;
   border-radius: 3px;
   background-color: #d2d4d5;
-  transition: all .5s ease;
 }
 
+
+
+
+.food .sub-menu::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background-color: transparent;
+}
+
+
 .sub-menu a {
+  padding: 14px 20px;
   border-top: 1px solid #b9bdc1;
   font-size: 15px;
   color: #2a3644;
@@ -91,22 +91,28 @@ ul {
   
 }
 
-.menu li .sub-menu li:first-child a {
+
+.food li .sub-menu li:first-child a {
   border-top: none;
   
 }
 
-.menu li .sub-menu li:hover:first-child a {
+.food li .sub-menu li:hover:first-child a {
   border-radius: 3px 3px 0 0;
   
 }
 
-.menu li .sub-menu li:hover:last-child a {
+.food li .sub-menu li:hover:last-child a {
   border-radius: 0 0 3px 3px;
   
 }
 
-.menu li:hover .sub-menu {
+.boc {
+  right: 0;
+}
+
+
+.food li:hover .sub-menu {
   display: block;
 }
 
