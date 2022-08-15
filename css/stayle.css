@@ -26,6 +26,7 @@ ul {
   list-style: none;
 }
 
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
@@ -55,15 +56,10 @@ body {
   border-left: none;
 }
 
-
-
-.menu > li:last-child > a{
+.menu > li:last-child > a {
   border-radius: 0 3px 3px 0;
   border-right: none;
 }
-
-
-
 
 .menu a {
   padding: 14px 30px;
@@ -71,11 +67,10 @@ body {
 }
 
 .menu a:hover  {
+  
   color: #fd8612;
   background-color: #3f4852;
 }
-
-
 
 .sub-menu {
   position: absolute;
@@ -88,37 +83,32 @@ body {
   z-index: 2;
 }
 
-
-
-
-.menu .sub-menu::before {
+.sub-menu::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 5px;
   top: -5px;
   background-color: transparent;
+  
 }
-
 
 .sub-menu a {
   padding: 14px 20px;
   border-top: 1px solid #b9bdc1;
   font-size: 15px;
   color: #2a3644;
-  
 }
 
-
-.menu li .sub-menu li:first-child a {
+.sub-menu li:first-child a {
   border-top: none;
 }
 
-.menu li .sub-menu li:hover:first-child a {
+.sub-menu li:hover:first-child a {
   border-radius: 3px 3px 0 0;
 }
 
-.menu li .sub-menu li:hover:last-child a {
+.sub-menu li:hover:last-child a {
   border-radius: 0 0 3px 3px;
 }
 
@@ -145,35 +135,28 @@ body {
 }
 
 .menu-table {
-  
   display: table-row;
 }
 
-
-
-.menu-table li {
+.menu-table > li {
   border-right: 1px solid #3f4852;
   position: relative;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  
 }
 
 .menu-table li:last-child {
   border-right: none;
 }
 
- .menu-table li:first-child a {
+.menu-table > li:first-child a {
   border-radius: 3px 0 0 3px;
   
 }
 
-
-
-.menu-table li:last-child a {
+.menu-table > li:last-child a {
   border-radius: 0 3px 3px 0;
-  
 }
 
 .menu-table a:hover {
@@ -181,19 +164,42 @@ body {
   background-color: #3f4852;
 }
 
-.menu-table li:hover .sub-menu {
+.hover-sub:hover > .sub-menu {
   display: block;
 }
 
-.menu-table .sub-menu::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  top: -5px;
+.sub1 {
+  text-align: left;
+}
+
+.sub3::before,
+.sub2::before {
+  top: 0;
+  width: 8px;
+  height: 100%;
+  right:-5px;
   background-color: transparent;
 }
 
-.sub1 {
-  display:table-column;
+.sub2::before {
+  left: -5px;
 }
+
+.hover-sub {
+  position: relative;
+}
+
+.hover-sub > .sub1:hover > .sub2 {
+  display: block;
+}
+
+.sub2 {
+  top: 0;
+  left: 102.5%;
+}
+
+.sub3 {
+  top: 0;
+  right: 102%;
+}
+
