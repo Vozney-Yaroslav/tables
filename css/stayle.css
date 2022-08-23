@@ -94,7 +94,7 @@ body {
 }
 
 .sub-menu a {
-  padding: 14px 20px;
+  padding: 11px 20px;
   border-top: 1px solid #b9bdc1;
   font-size: 15px;
   color: #2a3644;
@@ -213,10 +213,19 @@ body {
   
 }
 
+.house {
+  margin: 0 15px;
+  padding: 0;
+  
+  background: url(../img/sprite2.png) no-repeat;
+  transition: all .25s ease;
+}
 
-
-
-
+.home {
+  width: 13px;
+  height: 16px;
+  background-position: 0 0;
+}
 
 
 .social {
@@ -253,4 +262,35 @@ a.tw {
   background-position: -12px 0;
 }
 
+.services {
+  height: 162px;
+  border-right: #b9bdc1 solid 1px;
+  border-radius: 3px 0 0 3px;
+}
 
+
+.services > li:first-child > a {
+  border-radius: 3px 0 0 0;
+  
+}
+
+.services > li:last-child > a {
+  border-radius: 0 0 0 3px;
+  
+}
+
+.services2 {
+  height: 162px;
+  left: 211px;
+  border-radius: 0 3px 3px 0;
+
+}
+.services2 > li:first-child > a {
+  border-radius: 0 3px 0 0;
+  
+}
+
+.services2 > li:last-child > a {
+  border-radius: 0 0 0 0;
+  border-bottom: #b9bdc1 solid 1px;
+}
