@@ -214,7 +214,7 @@ body {
 }
 
 .house {
-  margin: 0 15px;
+  margin: 15px 0 0 40px;
   padding: 0;
   
   background: url(../img/sprite2.png) no-repeat;
