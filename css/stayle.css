@@ -4,6 +4,7 @@
 
 
 p {
+  margin: 60px 0 25px 0;
   text-transform: uppercase;
   font-size: 24px;
   letter-spacing: 1px;
@@ -67,7 +68,6 @@ body {
 }
 
 .menu a:hover  {
-  
   color: #fd8612;
   background-color: #3f4852;
 }
@@ -94,9 +94,9 @@ body {
 }
 
 .sub-menu a {
-  padding: 11px 20px;
+  padding: 11.56px 20px;
   border-top: 1px solid #b9bdc1;
-  font-size: 15px;
+  font-size: 14.5px;
   color: #2a3644;
 }
 
@@ -213,18 +213,24 @@ body {
   
 }
 
-.menu span {
-  margin: 0 12px 0 0;
-  display: inline-block;
-  width: 16px;
-  height: 13px;
-  background: url(../img/sprite2.png) no-repeat;
-  
+.village > .menu > li > a  {
+  border-left: none;
 }
 
-span.home {
-  background-position: 0 0;
+.home::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url(../img/sprite2.png) no-repeat 0 0;
+  left: 30px
 }
+
+.village > .menu > li:first-child a {
+ padding-left: 58px;
+}
+
+
 
 .social {
   display: flex;
@@ -264,7 +270,7 @@ a.tw {
   margin-right: 30px;
   width: 18px;
   height: 15px;
-  background-position: -12px 0;
+  background-position: -12px -2px;
 }
 
 a.tw:hover {
@@ -272,9 +278,10 @@ a.tw:hover {
 }
 
 .services {
-  height: 162px;
+  height: 163px;
   border-right: #b9bdc1 solid 1px;
   border-radius: 3px 0 0 3px;
+  box-sizing: border-box;
 }
 
 
@@ -289,14 +296,13 @@ a.tw:hover {
 }
 
 .services2 {
-  height: 162px;
+  height: 163px;
   left: 211px;
   border-radius: 0 3px 3px 0;
-
 }
+
 .services2 > li:first-child > a {
-  border-radius: 0 3px 0 0;
-  
+  border-radius: 0 3px 0 0; 
 }
 
 .services2 > li:last-child > a {
