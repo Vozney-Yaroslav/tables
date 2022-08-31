@@ -152,7 +152,6 @@ body {
 
 .menu-table > li:first-child a {
   border-radius: 3px 0 0 3px;
-  
 }
 
 .menu-table > li:last-child a {
@@ -308,5 +307,21 @@ a.tw:hover {
 .services2 > li:last-child > a {
   border-radius: 0 0 0 0;
   border-bottom: #b9bdc1 solid 1px;
+}
+
+/* Таблица */
+
+ 
+
+
+table, tr, td, th {
+  border: 1px solid #c0c1c2;
+  border-collapse: collapse;
+  
+}
+
+thead {
+  
+  background:  #2a3644;
 }
 
